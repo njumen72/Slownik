@@ -15,15 +15,18 @@ int main()
 	{
 		plik.open("slownik.txt");
 		int ile_linii = 0;
+		int pusta = 0;
 		while (getline(plik, linia))
-		{
 			ile_linii++;
-		}
 		plik.close();
-		cout << "*S l o w n i k* (zawiera " << ile_linii << " hasel.)\n";
+
+		cout << "# S l o w n i k  (zawiera " << ile_linii << " hasel.).\t*Zamkniecie wpisz \"exit\"\n";
 		cout << "---------------\n";
 		cout << "Wpisz wyraz: ";
 		getline(cin, wyraz);
+
+		if (wyraz == "exit")
+			break;
 
 		plik.open("slownik.txt", ios::in);
 
@@ -56,3 +59,4 @@ int main()
 	}
 	return 0;
 }
+//njumen72
