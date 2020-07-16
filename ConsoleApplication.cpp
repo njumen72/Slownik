@@ -20,12 +20,12 @@ int main()
 			ile_linii++;
 		plik.close();
 
-		cout << "# S l o w n i k  (zawiera " << ile_linii << " hasel.).\t*Zamkniecie wpisz \"exit\"\n";
+		cout << "# S l o w n i k  (zawiera " << ile_linii << " hasel.).\t*q -wyjscie (exit)\n";
 		cout << "---------------\n";
 		cout << "Wpisz wyraz: ";
 		getline(cin, wyraz);
 
-		if (wyraz == "exit")
+		if (wyraz == "q")
 			break;
 
 		plik.open("slownik.txt", ios::in);
@@ -54,7 +54,7 @@ int main()
 			plik.close();
 		}
 
-		Sleep(1000);
+		Sleep(500);
 		system("cls");
 	}
 	return 0;
