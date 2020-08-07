@@ -20,7 +20,7 @@ int main()
 			ile_linii++;
 		plik.close();
 
-		cout << "# S l o w n i k  (zawiera " << ile_linii << " hasel.).\t*q -wyjscie (exit)\n";
+		cout << "# S l o w n i k  (zawiera " << ile_linii << " hasel)\t*q -wyjscie (exit)\n";
 		cout << "---------------\n";
 		cout << "Wpisz wyraz: ";
 		getline(cin, wyraz);
